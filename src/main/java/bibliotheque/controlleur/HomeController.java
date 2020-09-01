@@ -9,8 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class HomeController {
 
     @GetMapping(value = "/")
-    public ModelAndView homePage(Model model){
-
+    public ModelAndView home(Model model){
         return new ModelAndView("home");
     }
 }

@@ -1,6 +1,5 @@
 package bibliotheque.modele;
 
-import javax.persistence.Column;
 import java.io.Serializable;
 import java.math.BigInteger;
 
