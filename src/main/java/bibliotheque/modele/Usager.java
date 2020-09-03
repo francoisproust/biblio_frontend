@@ -7,6 +7,15 @@ public class Usager implements Serializable {
     private String prenom;
     private String identifiant;
     private String password;
+    private TypeUser typeUser;
+
+    public TypeUser getTypeUser() {
+        return typeUser;
+    }
+
+    public void setTypeUser(TypeUser typeUser) {
+        this.typeUser = typeUser;
+    }
 
     public String getNom() {
         return nom;

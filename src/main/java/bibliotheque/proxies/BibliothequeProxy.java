@@ -2,6 +2,7 @@ package bibliotheque.proxies;
 
 import bibliotheque.modele.Ouvrage;
 import bibliotheque.modele.ResultatExemplaire;
+import bibliotheque.modele.TypeUser;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -12,4 +13,6 @@ public interface BibliothequeProxy {
     @GetMapping("/rechercher-ouvrage")
     List<ResultatExemplaire> getResultatExemplaire(Ouvrage ouvrage);
 
+    @GetMapping("/type-usager")
+    List<TypeUser> getListeTypeUsager();
 }
