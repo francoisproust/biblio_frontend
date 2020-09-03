@@ -25,14 +25,6 @@
 
                 <form:input type="text" path="password" class="form-control form-control-sm mb-3"
                             placeholder="Mot De Passe"/>
-                <p>
-                    Type Usager:</br>
-                    <form:select path="typeUser">
-                        <c:forEach items="${typeUser}" var= "typeUser">
-                            <form:option value="${typeUser.typeUser}">${typeUser.typeUser}</form:option></br>
-                        </c:forEach>
-                    </form:select>
-                </p>
                 <input type="submit" class="btn btn-success" value="Créer compte"/>
                 <input type="reset" class="btn btn-danger" value="Reset"/>
                 <a class="btn btn-warning" href="./">Cancel</a>

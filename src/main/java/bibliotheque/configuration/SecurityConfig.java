@@ -4,6 +4,7 @@ import bibliotheque.service.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -13,28 +14,36 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
-    private final CustomUserDetailsService customUserDetailsService;
+
+    private final CustomUserDetailsService _UserDetailsService;
 
     @Autowired
     public SecurityConfig(CustomUserDetailsService userDetailsService) {
-        this.customUserDetailsService = userDetailsService;
+        this._UserDetailsService = userDetailsService;
     }
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.userDetailsService(customUserDetailsService).passwordEncoder(encoder());
+        auth.userDetailsService(_UserDetailsService).passwordEncoder(encoder());
     }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
- /**       http.authorizeRequests()
-                .antMatchers("/").permitAll()
-                .anyRequest().authenticated()
+        http.csrf()
+                .disable()
+                //.authenticationProvider(getProvider())
+                .formLogin()
+                .loginPage("/login")
+                .defaultSuccessUrl("/").failureUrl("/login")
+                .usernameParameter("identifiant").passwordParameter("password")
                 .and()
-                .formLogin().loginPage("/login").permitAll()
+                .logout()
+                .logoutUrl("/logout")
+                .logoutSuccessUrl("/")
+                .invalidateHttpSession(true)
                 .and()
-                .logout().permitAll();
- **/
+                .authorizeRequests()
+                .anyRequest().permitAll();
     }
 
     @Bean

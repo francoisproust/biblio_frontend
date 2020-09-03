@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.util.List;
 
 @Controller
 public class UsagerController {
@@ -25,15 +24,13 @@ public class UsagerController {
 
     @GetMapping(value = "/creation-compte")
     public ModelAndView creationCompte(Model model) {
-        List<TypeUser> typeUser = bibliothequeProxy.getListeTypeUsager();
-        model.addAttribute("typeUser",typeUser);
         model.addAttribute("usager", new Usager());
         return new ModelAndView("creation-compte");
     }
 
     @PostMapping(value = "/creation-compte")
     public ModelAndView creationComptePost(Model model, @ModelAttribute("usager") Usager usager) {
-
+        bibliothequeProxy.creationCompte(usager);
         return new ModelAndView("home" );
     }
 }
