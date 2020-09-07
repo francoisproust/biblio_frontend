@@ -13,6 +13,15 @@ public class Usager implements Serializable, UserDetails {
     private String identifiant;
     private String password;
     private String typeUser;
+    private String email;
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
     public Integer getUsagerId() {
         return usagerId;

@@ -22,7 +22,8 @@
 
                 <form:input type="text" path="identifiant" class="form-control form-control-sm mb-3"
                             placeholder="Identifiant"/>
-
+                <form:input type="text" path="email" class="form-control form-control-sm mb-3"
+                            placeholder="Email"/>
                 <form:input type="text" path="password" class="form-control form-control-sm mb-3"
                             placeholder="Mot De Passe"/>
                 <input type="submit" class="btn btn-success" value="Créer compte"/>

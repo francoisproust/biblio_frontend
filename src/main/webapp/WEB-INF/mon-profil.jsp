@@ -17,6 +17,7 @@
             Nom : ${usager.nom} </br>
             Prénom : ${usager.prenom} </br>
             Identifiant : ${usager.identifiant} </br>
+            Email:  ${usager.email} </br>
         </p>
         <p>
             <U>Mes Exemplaires empruntés:</U></br>
