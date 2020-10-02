@@ -1,4 +1,4 @@
-package bibliotheque.bibliofront.modele;
+package bibliotheque.modele;
 
 import java.io.Serializable;
 

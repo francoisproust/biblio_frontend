@@ -1,4 +1,4 @@
-package bibliotheque.bibliofront.proxies;
+package bibliotheque.proxies;
 
 import bibliotheque.bibliofront.modele.*;
 import bibliotheque.modele.*;

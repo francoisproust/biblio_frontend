@@ -1,7 +1,7 @@
-package bibliotheque.bibliofront.service;
+package bibliotheque.service;
 
-import bibliotheque.bibliofront.modele.Usager;
-import bibliotheque.bibliofront.proxies.BibliothequeProxy;
+import bibliotheque.modele.Usager;
+import bibliotheque.proxies.BibliothequeProxy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.security.core.userdetails.UserDetails;

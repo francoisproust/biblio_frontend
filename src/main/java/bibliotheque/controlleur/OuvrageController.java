@@ -1,8 +1,8 @@
-package bibliotheque.bibliofront.controlleur;
+package bibliotheque.controlleur;
 
-import bibliotheque.bibliofront.modele.Ouvrage;
-import bibliotheque.bibliofront.modele.ResultatExemplaire;
-import bibliotheque.bibliofront.proxies.BibliothequeProxy;
+import bibliotheque.modele.Ouvrage;
+import bibliotheque.modele.ResultatExemplaire;
+import bibliotheque.proxies.BibliothequeProxy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
