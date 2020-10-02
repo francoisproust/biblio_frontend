@@ -1,8 +1,8 @@
-package bibliotheque.controlleur;
+package bibliotheque.bibliofront.controlleur;
 
-import bibliotheque.modele.Exemplaire;
-import bibliotheque.modele.Usager;
-import bibliotheque.proxies.BibliothequeProxy;
+import bibliotheque.bibliofront.modele.Exemplaire;
+import bibliotheque.bibliofront.modele.Usager;
+import bibliotheque.bibliofront.proxies.BibliothequeProxy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;

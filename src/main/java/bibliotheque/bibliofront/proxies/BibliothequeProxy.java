@@ -1,5 +1,6 @@
-package bibliotheque.proxies;
+package bibliotheque.bibliofront.proxies;
 
+import bibliotheque.bibliofront.modele.*;
 import bibliotheque.modele.*;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;

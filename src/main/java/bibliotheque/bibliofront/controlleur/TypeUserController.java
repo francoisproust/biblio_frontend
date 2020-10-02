@@ -1,8 +1,7 @@
-package bibliotheque.controlleur;
+package bibliotheque.bibliofront.controlleur;
 
-import bibliotheque.modele.TypeUser;
-import bibliotheque.modele.Usager;
-import bibliotheque.proxies.BibliothequeProxy;
+import bibliotheque.bibliofront.modele.TypeUser;
+import bibliotheque.bibliofront.proxies.BibliothequeProxy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

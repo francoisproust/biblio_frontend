@@ -9,10 +9,10 @@
         <version>2.3.2.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.bibliotheque</groupId>
-    <artifactId>biblio_frontend</artifactId>
+    <groupId>com.bibliotheque.bibliofront</groupId>
+    <artifactId>bibliofront</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>bibliotheque</name>
+    <name>bibliofront</name>
     <description>gestion du front de la bibliotheque</description>
 
     <properties>

@@ -1,4 +1,4 @@
-package bibliotheque.configuration;
+package bibliotheque.bibliofront.configuration;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.BadCredentialsException;

@@ -1,6 +1,6 @@
-package bibliotheque.configuration;
+package bibliotheque.bibliofront.configuration;
 
-import bibliotheque.service.CustomUserDetailsService;
+import bibliotheque.bibliofront.service.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

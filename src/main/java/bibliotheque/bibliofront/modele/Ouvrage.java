@@ -1,4 +1,4 @@
-package bibliotheque.modele;
+package bibliotheque.bibliofront.modele;
 
 import java.io.Serializable;
 import java.math.BigInteger;

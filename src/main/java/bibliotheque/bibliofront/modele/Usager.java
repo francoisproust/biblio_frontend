@@ -1,4 +1,4 @@
-package bibliotheque.modele;
+package bibliotheque.bibliofront.modele;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

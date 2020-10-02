@@ -1,4 +1,4 @@
-package bibliotheque.controlleur;
+package bibliotheque.bibliofront.controlleur;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

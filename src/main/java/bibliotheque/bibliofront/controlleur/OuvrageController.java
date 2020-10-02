@@ -1,9 +1,8 @@
-package bibliotheque.controlleur;
+package bibliotheque.bibliofront.controlleur;
 
-import bibliotheque.modele.Ouvrage;
-import bibliotheque.modele.ResultatExemplaire;
-import bibliotheque.proxies.BibliothequeProxy;
-import org.bouncycastle.math.raw.Mod;
+import bibliotheque.bibliofront.modele.Ouvrage;
+import bibliotheque.bibliofront.modele.ResultatExemplaire;
+import bibliotheque.bibliofront.proxies.BibliothequeProxy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
